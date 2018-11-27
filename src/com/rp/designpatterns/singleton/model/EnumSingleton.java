@@ -1,22 +1,18 @@
 package com.rp.designpatterns.singleton.model;
 
-public class EnumSingleton {
+public enum EnumSingleton {
 
-    private EnumSingleton() {
+    INSTANCE;
+
+    private int name;
+
+    public int getName() {
+        return name;
     }
 
-    public enum Enum {
-        INSTANCE;
-
-        private EnumSingleton singleton = new EnumSingleton();
-
-        public EnumSingleton getSingleton() {
-            return singleton;
-        }
-
+    public void setName(int name) {
+        this.name = name;
     }
-
-
 }
 
 

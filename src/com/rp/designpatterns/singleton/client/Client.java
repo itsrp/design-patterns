@@ -28,8 +28,8 @@ public class Client {
         InnerClassSingleton innerClassSingleton2 = InnerClassSingleton.getInstance();
         System.out.println(innerClassSingleton1.equals(innerClassSingleton2));
 
-        EnumSingleton instance1 = EnumSingleton.Enum.INSTANCE.getSingleton();
-        EnumSingleton instance2 = EnumSingleton.Enum.INSTANCE.getSingleton();
+        EnumSingleton instance1 = EnumSingleton.INSTANCE;
+        EnumSingleton instance2 = EnumSingleton.INSTANCE;
         System.out.println(instance1.equals(instance2));
     }
 }
